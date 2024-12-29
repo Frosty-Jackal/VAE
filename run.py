@@ -25,7 +25,7 @@ optimizer = optim.Adam(vae.parameters(),lr=1e-3)
 epochs=10
 if not os.path.exists('./results'):
     os.makedirs('./results')
-if not os.path.exists('./modles'):
+if not os.path.exists('./models'):
     os.makedirs('./models')
 
 vae.train()
