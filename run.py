@@ -15,7 +15,7 @@ transform=transforms.Compose([
         transforms.ToTensor(),
 ])
 
-train_dataset = datasets.MNIST(root='./data',train=True,transform=transform,download=False)
+train_dataset = datasets.MNIST(root='./data',train=True,transform=transform,download=True)
 train_loader = DataLoader(train_dataset,batch_size=64 , shuffle=False)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu' )
